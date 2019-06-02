@@ -5,6 +5,7 @@ import SlideHistory from "./SlideHistory";
 import SlideTs09 from "./SlideTs09";
 import SlideTs18 from "./SlideTs18";
 import SlideTs33 from "./SlideTs33";
+import SlideBabel from "./SlideBabel";
 import { connect } from "react-redux"
 import { selectSlide } from "../selectors";
 import KeyboardNav from "./KeyboardNav";
@@ -15,6 +16,7 @@ const slides = [
     SlideTs09,
     SlideTs18,
     SlideTs33,
+    SlideBabel,
 ]
 const NoSlide = () => <p>No Slide</p>;
 
