@@ -3,7 +3,7 @@ export default function SlideTs09() {
     return (
         <>
             <h1>Typescript 0.9</h1>
-            <img height="60%" src="./assets/ts09.png"></img>
+            <img src="./assets/ts09.png"></img>
         </>
     );
 }

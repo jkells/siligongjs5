@@ -1,7 +1,9 @@
 import { combineReducers } from "redux";
 import { NEXT_SLIDE, PREVIOUS_SLIDE } from "./actions";
+import slides from "./slides";
 
-const MAX_SLIDE = 10;
+const MAX_SLIDE = slides.length;
+
 const slideNumber = (state = 0, action) => {
     switch (action.type) {
         case NEXT_SLIDE:

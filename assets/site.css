@@ -20,7 +20,7 @@ body > div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     height: 100%;
 }
 
@@ -29,14 +29,34 @@ button {
 }
 
 h1 {
-    font-size: 64px;
+    text-align: center;
+    font-size: 48px;
+    color: #7CBF6A;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+ul {
+    margin: 0 auto;
 }
 
 li {
-    font-size: 32px;
+    font-size: 24px;
     margin: 8px;
 }
 
 code {
-    font-size: 32px;
+    font-size: 24px;
+}
+
+img {
+    max-width: 80%;
+    max-height:80%;
+    margin: 0 auto;
+}
+
+a {
+    color: #87D6F3;
 }
