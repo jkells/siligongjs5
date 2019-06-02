@@ -60,3 +60,10 @@ img {
 a {
     color: #87D6F3;
 }
+
+.demo-button {
+    height: 64px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}

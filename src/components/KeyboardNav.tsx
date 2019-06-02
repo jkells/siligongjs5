@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
 import { connect } from "react-redux";
 import { nextSlide, previousSlide } from "../actions";
+import { useEffect } from "react";
 
 const KeyboardNav = props => {
     useEffect(() => {

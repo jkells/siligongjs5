@@ -1,8 +1,8 @@
-import React from "react";
-import Footer from "./Footer";
 import { connect } from "react-redux";
 import { selectSlide } from "../selectors";
+import Footer from "./Footer";
 import KeyboardNav from "./KeyboardNav";
+import React from "react";
 import slides from "../slides";
 
 const NoSlide = () => <p>No Slide</p>;

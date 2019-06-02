@@ -6,6 +6,7 @@ import SlideTs33 from "./components/SlideTs33";
 import SlideBabel from "./components/SlideBabel";
 import SlideBasics from "./components/SlideBasics";
 import SlideLibraries from "./components/SlideLibraries";
+import SlideDemo from "./components/SlideDemo";
 
 export default [
     SlideIntro,
@@ -16,4 +17,5 @@ export default [
     SlideBabel,
     SlideBasics,
     SlideLibraries,
+    SlideDemo,
 ];

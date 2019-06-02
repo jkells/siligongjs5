@@ -1,7 +1,7 @@
-import React from "react";
 import { connect } from "react-redux";
-import { selectSlide } from "../selectors";
 import { nextSlide, previousSlide } from "../actions";
+import { selectSlide } from "../selectors";
+import React from "react";
 
 const Footer = props => (
     <div className="footer">
