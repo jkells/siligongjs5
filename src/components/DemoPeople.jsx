@@ -1,20 +1,10 @@
 import { addPerson } from "../actions";
 import { connect } from "react-redux";
-import { Dispatch } from "redux";
 import { selectPeople } from "../selectors";
-import { State } from "../reducers";
 import faker from "faker";
 import React from "react";
 
-interface OwnProps {
-    buttonColor: string;
-}
-
-type Props = OwnProps &
-    ReturnType<typeof mapDispatchToProps> &
-    ReturnType<typeof mapStateToProps>;
-
-const DemoPeople = (props: Props) => {
+const DemoPeople = (props) => {
     const items = props.people.map(p => (
         <li>
             {p.name} - {p.jumpingHeight}
@@ -35,10 +25,10 @@ const DemoPeople = (props: Props) => {
     );
 };
 
-const mapStateToProps = (state: State, props: OwnProps) => ({
+const mapStateToProps = (state, props) => ({
     people: selectPeople(state),
 });
-const mapDispatchToProps = (dispatch: Dispatch) => ({
+const mapDispatchToProps = (dispatch) => ({
     onClick: () =>
         dispatch(
             addPerson({

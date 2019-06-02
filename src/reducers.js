@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
-import { NEXT_SLIDE, PREVIOUS_SLIDE, Action, ADD_TODO } from "./actions";
+import { NEXT_SLIDE, PREVIOUS_SLIDE, ADD_TODO } from "./actions";
 import slides from "./slides";
 
 const MAX_SLIDE = slides.length;
 
-const slideNumber = (state = 0, action: Action) => {
+const slideNumber = (state = 0, action) => {
     switch (action.type) {
         case NEXT_SLIDE:
             return (state + 1) % MAX_SLIDE;
@@ -18,7 +18,7 @@ const slideNumber = (state = 0, action: Action) => {
     return state;
 };
 
-const people = (state: Person[] = [], action: Action) => {
+const people = (state = [], action) => {
     if (action.type === ADD_TODO) {
         return [...state, action.person];
     }
@@ -29,7 +29,5 @@ const rootReducer = combineReducers({
     slideNumber,
     people,
 });
-
-export type State = ReturnType<typeof rootReducer>;
 
 export default rootReducer;
