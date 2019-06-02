@@ -27,8 +27,8 @@ interface Person {
 const person: Person = {
     name: "Jared Kells",
     jumpingHeight: 45,
-}
+};
 
 // Any the escape hatch
 let g: any = 1;
-g = "foobar"
+g = "foobar";

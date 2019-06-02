@@ -16,4 +16,4 @@ export default [
     SlideBabel,
     SlideBasics,
     SlideLibraries,
-]
+];

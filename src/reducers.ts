@@ -11,12 +11,12 @@ const slideNumber = (state = 0, action) => {
 
         case PREVIOUS_SLIDE:
             if (state === 0) {
-                return MAX_SLIDE - 1
+                return MAX_SLIDE - 1;
             }
             return state - 1;
     }
     return state;
-}
+};
 
 const rootReducer = combineReducers({
     slideNumber,

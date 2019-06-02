@@ -1,7 +1,7 @@
 // Union types
-function unionTypes (foo: number | string) {
+function unionTypes(foo: number | string) {
     // Simple type guard
-    if(typeof foo === "string"){
+    if (typeof foo === "string") {
         // foo is a string here.
         return foo.toLowerCase();
     }
@@ -9,7 +9,6 @@ function unionTypes (foo: number | string) {
     // foo is a number here.
     return `${foo.toPrecision(5)}`;
 }
-
 
 // Intersection types
 interface Person {

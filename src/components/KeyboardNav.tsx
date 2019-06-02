@@ -1,22 +1,22 @@
 import React, { useEffect, useRef } from "react";
-import { connect } from "react-redux"
+import { connect } from "react-redux";
 import { nextSlide, previousSlide } from "../actions";
 
-const KeyboardNav = (props) => {
+const KeyboardNav = props => {
     useEffect(() => {
-        const handler = (event) => {
-            switch(event.key) {
+        const handler = event => {
+            switch (event.key) {
                 case "ArrowLeft":
                     return props.previousSlide();
                 case "ArrowRight":
                     return props.nextSlide();
             }
-        }
-        document.body.addEventListener('keydown', handler);
+        };
+        document.body.addEventListener("keydown", handler);
         return () => document.body.removeEventListener("keydown", handler);
-    })
+    });
     return props.children;
-}
+};
 
 const mapStateToProps = () => ({});
 const mapDispatchToProps = (dispatch, props) => ({
@@ -24,4 +24,7 @@ const mapDispatchToProps = (dispatch, props) => ({
     previousSlide: () => dispatch(previousSlide()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(KeyboardNav);
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(KeyboardNav);

@@ -3,6 +3,6 @@
         "**/node_modules": true,
         "**/dist": true,
         "yarn.lock": true,
-        ".vscode": true,
+        ".vscode": true
     }
 }

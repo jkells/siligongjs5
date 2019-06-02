@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "./Footer";
-import { connect } from "react-redux"
+import { connect } from "react-redux";
 import { selectSlide } from "../selectors";
 import KeyboardNav from "./KeyboardNav";
 import slides from "../slides";
 
 const NoSlide = () => <p>No Slide</p>;
 
-const App = (props) => {
+const App = props => {
     const Slide = slides[props.slide] || NoSlide;
     return (
         <KeyboardNav>
@@ -17,10 +17,13 @@ const App = (props) => {
             </>
         </KeyboardNav>
     );
-}
+};
 
 const mapStateToProps = (state, props) => ({
     slide: selectSlide(state),
 });
 
-export default connect(mapStateToProps, null)(App);
+export default connect(
+    mapStateToProps,
+    null
+)(App);
