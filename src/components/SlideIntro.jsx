@@ -8,11 +8,11 @@ export default function SlideIntro() {
                 <li>Introducing Typescript to a babel project</li>
                 <li>Typescript 101</li>
                 <li>Type inference</li>
+                <li>Strict null checks</li>
                 <li>String literal types</li>
                 <li>Intersections / Unions</li>
                 <li>Discriminated Unions</li>
-                <li>Strict null checks</li>
-                <li>Making the switch</li>
+                <li>Working with React</li>
             </ul>
         </>
     );
