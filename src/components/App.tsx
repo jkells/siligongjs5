@@ -5,7 +5,6 @@ import { selectSlide } from "../selectors";
 import KeyboardNav from "./KeyboardNav";
 import slides from "../slides";
 
-
 const NoSlide = () => <p>No Slide</p>;
 
 const App = (props) => {

@@ -7,9 +7,10 @@ export default function SlideBasics() {
             <ul>
                 <li>ESNext features</li>
                 <li>Optional type annotations</li>
-                <li>The any type</li>
                 <li>Arrays, Tuples</li>
                 <li>Objects</li>
+                <li>The any type</li>
+                <li>Type inference</li>
             </ul>
         </>
     );
