@@ -14,36 +14,13 @@ const getPeople = () => {
 
 const CM_TO_FEET = 1 / 30.48;
 
+// We need to type params
 const cmToFeet = height => {
     return height * CM_TO_FEET;
 };
 
-// 1. Example find me with feet.
-// 2. Reduce for max.
-
-/**
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
-// Cheat Sheet
 const me = getPeople().find(x => x.name.startsWith("Jared"));
+// me could be undefined!
 if (me) {
     const meInFeet = {
         ...me,
@@ -52,6 +29,7 @@ if (me) {
     console.log(meInFeet);
 }
 
+// Can't make a typo!
 const maxHeight = getPeople().reduce(
     (acc, person) => Math.max(acc, person.jumpingHeight),
     0

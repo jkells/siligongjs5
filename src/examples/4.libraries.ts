@@ -20,31 +20,7 @@ const getPeople = () => {
     ];
 };
 
-// 1. Example groupByScooter,
-// 2. totalHeightByHasScooter
-
-/**
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 // Cheat sheet
-// const groupedByScooter = groupBy(getPeople(), p => p.hasScooter);
-// const totalHeightByHasScooter = mapValues(groupedByScooter, people => sum(people.map(p => p.jumpingHeight)));
-// console.log(totalHeightByHasScooter);
+const groupedByScooter = groupBy(getPeople(), p => p.hasScooter);
+const totalHeightByHasScooter = mapValues(groupedByScooter, people => sum(people.map(p => p.jumpingHeight)));
+console.log(totalHeightByHasScooter);

@@ -19,7 +19,7 @@ export default [
     SlideTs33,
     SlideBabel,
     SlideBasics,
-    SlideLibraries,
+    // SlideLibraries,
     SlideDemo,
     SlideOutro,
 ];
