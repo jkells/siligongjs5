@@ -2,17 +2,17 @@ import React from "react";
 import CodeBlock from "./CodeBlock";
 
 const actionCode = `
-interface Person {
+export interface Person {
     name: string;
     jumpingHeight: number;
 };
 
 export type Actions = ReturnType<typeof nextSlide> |
     ReturnType<typeof previousSlide> |
-    ReturnType<typeof addPerson> |
+    ReturnType<typeof addPerson>;
 `;
 
-const reducerCode = `export interface State = ReturnType<typeof rootReducer>;`
+const reducerCode = `export type State = ReturnType<typeof rootReducer>;`
 
 const componentCode = `interface OwnProps {
     buttonColor: string,
