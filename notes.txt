@@ -4,3 +4,7 @@
 4. Philosophy change
 5. Today
 6. Babel, Why Babel, Demo, Hello TypeScript
+7. Teach it quick!
+8. Demo the inference in a React App
+9. Why Why Why?
+10. Marquee

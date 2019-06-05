@@ -1,7 +1,7 @@
 import React from "react";
-import { CodeBlock } from "./CodeBlock";
+import CodeBlock from "./CodeBlock";
 
-const actionsCode = `
+const actionCode = `
 interface Person {
     name: string;
     jumpingHeight: number;
@@ -21,13 +21,13 @@ const componentCode = `interface OwnProps {
 type Props = OwnProps & ReturnType<typeof mapStateToProps> & ReturnType<typeof mapDispatchToProps>;
 `
 
-export default function SlideBabel() {
+export default function SlideDemoCode() {
     return (
         <>
             <h1>Cheat Sheet</h1>
             <div>
                 <h2>Actions</h2>
-                <CodeBlock languge="typescript" code={actionsCode} />
+                <CodeBlock languge="typescript" code={actionCode} />
                 <p>Don't forget as const!</p>
             </div>
             <div>
