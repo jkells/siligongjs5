@@ -4,8 +4,8 @@ import React from "react";
 
 const babelCode = `yarn add -D @babel/preset-typescript`;
 
-const renameCode = `find src -name "*.jsx" -exec rename 's/\.jsx$/.tsx/' '{}' \;
-find src -name "*.js" -exec rename 's/\.js$/.ts/' '{}' \;
+const renameCode = `find src -name "*.jsx" -exec rename 's/\.jsx$/.tsx/' '{}' \\;
+find src -name "*.js" -exec rename 's/\.js$/.ts/' '{}' \\;
 `;
 
 const webpackCode = `entry: './src/index.tsx',
