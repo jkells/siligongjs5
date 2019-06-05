@@ -14,7 +14,7 @@ export default [
     SlideIntro,
     SlideWhatIsTs,
     SlideTs09,
-    SlideHistory,
+    // SlideHistory,
     SlideTs18,
     SlideTs33,
     SlideBabel,

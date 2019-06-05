@@ -1,0 +1,6 @@
+1. Introduction, overview of the talk
+2. Description of the language. It's a superset
+3. Come from .NET, OO, ES6, The book, More than a superset
+4. Philosophy change
+5. Today
+
