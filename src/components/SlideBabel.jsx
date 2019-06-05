@@ -16,7 +16,7 @@ extensions: ['.js', '.jsx', '.ts', '.tsx']
 export default function SlideBabel() {
     return (
         <>
-            <h1>Introducing Typescript to a Babel project</h1>
+            <h1>Babel Project</h1>
             <div>
                 <h2>Install Typescript preset and update .babelrc</h2>
                 <SyntaxHighlighter language="bash" style={dark}>

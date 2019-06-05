@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 const root = document.createElement("div");
 document.body.appendChild(root);
 const store = createStore(reducers, {
-    slideNumber: parseInt(window.localStorage.slideNumber),
+    slideNumber: parseInt(window.localStorage.slideNumber) || 0,
 });
 
 store.subscribe(() => {

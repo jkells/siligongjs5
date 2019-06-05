@@ -4,15 +4,10 @@ export default function SlideIntro() {
         <>
             <h1>Siligong JS 5 - Typescript</h1>
             <ul>
-                <li>A brief history of Typescript</li>
-                <li>Introducing Typescript to a babel project</li>
-                <li>Typescript 101</li>
-                <li>Type inference</li>
-                <li>Strict null checks</li>
-                <li>String literal types</li>
-                <li>Intersections / Unions</li>
-                <li>Discriminated Unions</li>
-                <li>Working with React</li>
+                <li>Typescript Philosophy</li>
+                <li>Babel Demo</li>
+                <li>Learn Typescript in 10 Minutes</li>
+                <li>React / Redux Magic</li>
             </ul>
         </>
     );

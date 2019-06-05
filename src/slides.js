@@ -8,11 +8,13 @@ import SlideBasics from "./components/SlideBasics";
 import SlideLibraries from "./components/SlideLibraries";
 import SlideDemo from "./components/SlideDemo";
 import SlideOutro from "./components/Outro";
+import SlideWhatIsTs from "./components/SlideWhatIsTs";
 
 export default [
     SlideIntro,
-    SlideHistory,
+    SlideWhatIsTs,
     SlideTs09,
+    SlideHistory,
     SlideTs18,
     SlideTs33,
     SlideBabel,
