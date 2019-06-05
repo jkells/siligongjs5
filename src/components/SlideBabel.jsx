@@ -1,7 +1,8 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import React from "react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { dark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import CodeBlock from "./CodeBlock";
+import React from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
 
 const babelCode = `yarn add -D \\
     typescript \\
@@ -24,20 +25,6 @@ const webpackCode = `entry: './src/index.tsx',
 test: /\.(js|jsx|ts|tsx)$/
 extensions: ['.js', '.jsx', '.ts', '.tsx']
 `;
-
-function CodeBlock({ language, code }) {
-    // Hacks
-    return (
-        <div style={{position: "relative"}}>
-            <CopyToClipboard text={typesCode}>
-                <button style={{position: "absolute", right: 0}}>Copy</button>
-            </CopyToClipboard>
-            <SyntaxHighlighter language={language} style={dark}>
-                {code}
-            </SyntaxHighlighter>
-        </div>
-    );
-}
 
 export default function SlideBabel() {
     return (

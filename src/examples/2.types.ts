@@ -19,12 +19,12 @@ d[0].toPrecision(5);
 d[1].toLowerCase();
 
 // Objects
-interface Person {
+interface Jumper {
     name: string;
     jumpingHeight: number;
 }
 
-const person: Person = {
+const person: Jumper = {
     name: "Jared Kells",
     jumpingHeight: 45,
 };

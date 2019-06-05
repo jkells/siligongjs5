@@ -28,6 +28,7 @@ const DemoPeople = (props) => {
 const mapStateToProps = (state, props) => ({
     people: selectPeople(state),
 });
+
 const mapDispatchToProps = (dispatch) => ({
     onClick: () =>
         dispatch(
